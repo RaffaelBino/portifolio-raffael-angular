@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1em;
+  list-style: none;
+
+  & .navbar-item {
+    font-size: 16px;
+
+    & .navbar-link {
+      text-decoration: none;
+    }
+  }
+}
