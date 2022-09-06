@@ -12,10 +12,11 @@ export class CardComponent implements OnInit {
   @Input() descricao?: string;
   @Input() linkDoCodigo?: string;
   @Input() linkDemoProjeto?: string;
+  @Input() arrayDeTags?: string[];
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
   }
 
 }

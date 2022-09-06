@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { CardComponent } from './projetos/card/card.component';
+import { TagsModule } from 'src/app/shared/tags/tags.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { CardComponent } from './projetos/card/card.component';
     ContatoComponent,
     CardComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, TagsModule],
   exports: [HomeComponent, ProjetosComponent, SobreComponent, ContatoComponent],
 })
 export class HomeModule {}
