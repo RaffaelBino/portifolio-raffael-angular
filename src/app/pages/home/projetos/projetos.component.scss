@@ -1,8 +1,15 @@
-.cards-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.5em;
-    // margin-top: 20px;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5em;
+  // margin-top: 20px;
+}
+
+.projects-title {
+  color: var(--text-secondary-darken);
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 2em;
 }
