@@ -1,4 +1,5 @@
-<p>tags works! {{tags}}</p>
-<div *ngFor="let tag of tags">
-    <p>{{tag}}</p>
+<div class="tag-wrapper">
+  <div class="tag-badge" *ngFor="let tag of tags">
+    <p class="tag-text">{{ tag | uppercase }}</p>
+  </div>
 </div>

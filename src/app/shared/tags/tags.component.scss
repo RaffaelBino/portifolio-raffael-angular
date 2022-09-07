@@ -1,0 +1,24 @@
+.tag-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: .5em 0;
+}
+
+.tag-badge {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px 4px;
+  border: 1px solid var(--text-secondary);
+  border-radius: 4px;
+}
+
+.tag-text {
+  font-size: 12px;
+  line-height: 150%;
+}
