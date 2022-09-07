@@ -3,16 +3,16 @@
     <div class="card-image">
       <img [src]="urlImagem" [alt]="textoAltImagem" />
     </div>
-    <div class="card-title">
+    <h3 class="card-title">
       {{ titulo }}
-    </div>
+    </h3>
     <div class="card-tags">
       <!-- Dúvida se faço isso aqui ou crio um componente para tags-->
       <app-tags [tags]="arrayDeTags"></app-tags>
     </div>
-    <div class="card-description">
+    <p class="card-description">
       {{ descricao }}
-    </div>
+    </p>
     <div class="card-links" *ngIf="linkDoCodigo || linkDemoProjeto">
       <a [href]="linkDoCodigo" *ngIf="linkDoCodigo">Código</a>
       <a [href]="linkDemoProjeto" *ngIf="linkDemoProjeto">Demonstação</a>

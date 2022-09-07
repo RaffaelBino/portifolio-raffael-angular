@@ -17,3 +17,15 @@
     // transform: scale(1.05);
   }
 }
+
+.card-title {
+  color: var(--text-secondary-darken);
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 135%;
+}
+
+.card-description {
+  color: var(--text-primary);
+  font-size: 1em;
+}
