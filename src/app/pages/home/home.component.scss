@@ -26,6 +26,7 @@
 }
 
 .sumarry-text {
+  font-size: 16px;
   margin: 0.5em 0;
   line-height: 1.5em;
 }
@@ -33,4 +34,19 @@
 .sumarry-text-emphasis {
   color: var(--text-secondary);
   font-style: normal;
+}
+
+.cv {
+  border-bottom: 2px solid var(--text-secondary-darken);
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 8px 5px 4px;
+  gap: 4px;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: bold;
 }
