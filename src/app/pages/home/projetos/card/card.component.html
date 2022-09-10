@@ -3,19 +3,33 @@
     <div class="card-image">
       <img [src]="urlImagem" [alt]="textoAltImagem" />
     </div>
-    <h3 class="card-title">
-      {{ titulo }}
-    </h3>
-    <div class="card-tags">
-      <!-- Dúvida se faço isso aqui ou crio um componente para tags-->
-      <app-tags [tags]="arrayDeTags"></app-tags>
-    </div>
-    <p class="card-description">
-      {{ descricao }}
-    </p>
-    <div class="card-links" *ngIf="linkDoCodigo || linkDemoProjeto">
-      <a [href]="linkDoCodigo" *ngIf="linkDoCodigo">Código</a>
-      <a [href]="linkDemoProjeto" *ngIf="linkDemoProjeto">Demonstação</a>
+    <div class="card-body">
+      <h3 class="card-title">
+        {{ titulo }}
+      </h3>
+      <div class="card-tags">
+        <!-- Dúvida se faço isso aqui ou crio um componente para tags-->
+        <app-tags [tags]="arrayDeTags"></app-tags>
+      </div>
+      <p class="card-description">
+        {{ descricao }}
+      </p>
+      <div class="card-links" *ngIf="linkDoCodigo || linkDemoProjeto">
+        <a [href]="linkDoCodigo" *ngIf="linkDoCodigo">
+          <img
+            src="assets/icons/code.svg"
+            alt="Ícone do código do projeto - {{ titulo }}"
+          />
+          Código</a
+        >
+        <a [href]="linkDemoProjeto" *ngIf="linkDemoProjeto">
+          <img
+            src="assets/icons/demo.svg"
+            alt="Ícone da demonstação do projeto - {{ titulo }}"
+          />
+          Demonstação</a
+        >
+      </div>
     </div>
   </div>
 </div>
