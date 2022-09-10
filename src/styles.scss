@@ -5,6 +5,8 @@
   --text-primary: #{$color1};
   --text-secondary: #{$color4};
   --text-secondary-darken: #{darken($color4, 15%)};
+  --text-light: #{$color5};
+  --text-white: #fff;
 }
 
 html {
