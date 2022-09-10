@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 366px;
   width: 366px;
+  min-height: 475px;
   height: 100%;
   background-color: #fff;
   border-radius: 10px;
@@ -20,6 +21,7 @@
 
 .card-image img {
   width: 100%;
+  min-height: 275px;
   height: auto;
 }
 
@@ -50,4 +52,15 @@
   font-weight: bold;
   padding: 7px 8px 5px 4px;
   border-bottom: 2px solid var(--text-secondary-darken);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+
+  &:hover {
+    background-color: var(--text-secondary-darken);
+    color: var(--text-white);
+    border-radius: 4px;
+
+    & img {
+      filter: invert(1);
+    }
+  }
 }

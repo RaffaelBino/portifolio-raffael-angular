@@ -15,14 +15,14 @@
         {{ descricao }}
       </p>
       <div class="card-links" *ngIf="linkDoCodigo || linkDemoProjeto">
-        <a [href]="linkDoCodigo" *ngIf="linkDoCodigo">
+        <a target="_blank" [href]="linkDoCodigo" *ngIf="linkDoCodigo">
           <img
             src="assets/icons/code.svg"
             alt="Ícone do código do projeto - {{ titulo }}"
           />
           Código</a
         >
-        <a [href]="linkDemoProjeto" *ngIf="linkDemoProjeto">
+        <a target="_blank" [href]="linkDemoProjeto" *ngIf="linkDemoProjeto">
           <img
             src="assets/icons/demo.svg"
             alt="Ícone da demonstação do projeto - {{ titulo }}"
