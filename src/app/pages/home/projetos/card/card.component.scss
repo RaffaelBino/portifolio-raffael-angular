@@ -50,8 +50,9 @@
   width: fit-content;
   color: var(--text-primary);
   font-weight: bold;
-  padding: 7px 8px 5px 4px;
-  border-bottom: 2px solid var(--text-secondary-darken);
+  padding: 4px 8px 5px 4px;
+  border: 2px solid var(--text-secondary-darken);
+  border-radius: 4px;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 
   &:hover {

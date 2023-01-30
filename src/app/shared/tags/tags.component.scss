@@ -5,7 +5,7 @@
   justify-content: flex-start;
   gap: 4px;
   flex-wrap: wrap;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .tag-badge {
@@ -14,11 +14,19 @@
   align-items: center;
   justify-content: center;
   padding: 5px 8px 4px;
-  border: 1px solid var(--text-secondary);
   border-radius: 4px;
+  background-color: var(--text-secondary);
+  user-select: all;
 }
 
 .tag-text {
   font-size: 12px;
   line-height: 150%;
+  font-weight: 600;
+  color: var(--text-white);
+
+  &::selection {
+    background: var(--text-white);
+    color: var(--text-secondary);
+  }
 }

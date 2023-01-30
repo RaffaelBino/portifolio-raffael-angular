@@ -37,13 +37,23 @@
   font-style: normal;
 }
 
-.social{
+.social {
   display: flex;
   gap: 8px;
 }
 
 .cv {
-  border-bottom: 2px solid var(--text-secondary-darken);
+  &:after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px var(--text-secondary-darken);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
 }
 
 .download-btn {
